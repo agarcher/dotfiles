@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# "Real" git is the second one returned by 'which'
+REAL_GIT=$(which -a git | sed -n 2p)
+
+# Does the remote "origin" point to a Shopify repo?
+if ("$REAL_GIT" remote -v 2>/dev/null |
+    grep '^origin\b.*github.com[:/]Shopify.*(push)$' >/dev/null 2>&1); then
+
+    # Yes. Configure git to use shopify email.
+    export GIT_AUTHOR_EMAIL='adam.archer@shopify.com'
+    export GIT_COMMITTER_EMAIL='adam.archer@shopify.com'
+fi
+
+"$REAL_GIT" "$@"

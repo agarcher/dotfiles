@@ -1,0 +1,1 @@
+alias mvim='mvim -v'
