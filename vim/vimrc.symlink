@@ -77,4 +77,12 @@ nnoremap <leader>q <c-w>q
 map <C-n> :NERDTreeToggle<CR>
 
 " Find in files
-map <leader>f :Ack 
+nnoremap <leader>f :Ack
+
+" quick save and close
+nnoremap <leader>w :w<cr>
+nnoremap <leader>ww :w<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>qq :q<cr>
+nnoremap <leader>qw :wq<cr>
+nnoremap <leader>wq :wq<cr>
