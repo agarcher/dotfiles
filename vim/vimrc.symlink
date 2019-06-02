@@ -13,6 +13,8 @@ Plug 'altercation/vim-colors-solarized'             " colour scheme
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'                             " fuzzy file search
 Plug 'christoomey/vim-tmux-navigator'               " tmux/vim pane management
+Plug 'scrooloose/nerdtree'                          " file browser
+Plug 'mileszs/ack.vim'                              " file search utility
 call plug#end()
 
 " ********** SETTINGS **********
@@ -34,6 +36,18 @@ let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 " Mac Vim settings
 set guifont=Menlo:h15
 
+" Use ag for ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+"default indent settings
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+set autoindent
+
 " ********** KEYBINDINGS **********
 
 :let mapleader = " "
@@ -50,6 +64,12 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+nnoremap <leader>_ :vsp<cr>
+nnoremap <leader>- :sp<cr>
+nnoremap <leader>q <c-w>q
 
-" Shortcut to open vimrc
-map <leader>vimrc :e ~/dotfiles/.vimrc<cr>
+" Open nerd tree
+map <C-n> :NERDTreeToggle<CR>
+
+" Find in files
+map <leader>f :Ack 
