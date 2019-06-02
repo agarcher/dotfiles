@@ -15,6 +15,7 @@ Plug 'junegunn/fzf.vim'                             " fuzzy file search
 Plug 'christoomey/vim-tmux-navigator'               " tmux/vim pane management
 Plug 'scrooloose/nerdtree'                          " file browser
 Plug 'mileszs/ack.vim'                              " file search utility
+Plug 'scrooloose/nerdcommenter'                     " hotkey code commenting
 call plug#end()
 
 " ********** SETTINGS **********
