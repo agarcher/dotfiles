@@ -10,7 +10,7 @@ endif
 call plug#begin()
 Plug 'tpope/vim-sensible'                           " default settings
 Plug 'altercation/vim-colors-solarized'             " colour scheme
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug '/usr/local/opt/fzf'                           " fuzzy file search
 Plug 'junegunn/fzf.vim'                             " fuzzy file search
 Plug 'christoomey/vim-tmux-navigator'               " tmux/vim pane management
 Plug 'scrooloose/nerdtree'                          " file browser
