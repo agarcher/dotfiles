@@ -16,6 +16,7 @@ Plug 'christoomey/vim-tmux-navigator'               " tmux/vim pane management
 Plug 'scrooloose/nerdtree'                          " file browser
 Plug 'mileszs/ack.vim'                              " file search utility
 Plug 'scrooloose/nerdcommenter'                     " hotkey code commenting
+Plug 'luochen1990/rainbow'                          " parenthesis colour coding
 call plug#end()
 
 " ********** SETTINGS **********
@@ -41,6 +42,9 @@ set guifont=Menlo:h15
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Activate rainbow parenthesis
+let g:rainbow_active = 1
 
 "default indent settings
 set shiftwidth=2
