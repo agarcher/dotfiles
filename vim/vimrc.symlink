@@ -17,6 +17,7 @@ Plug 'scrooloose/nerdtree'                          " file browser
 Plug 'mileszs/ack.vim'                              " file search utility
 Plug 'scrooloose/nerdcommenter'                     " hotkey code commenting
 Plug 'luochen1990/rainbow'                          " parenthesis colour coding
+Plug 'itchyny/lightline.vim'                        " status bar skin
 call plug#end()
 
 " ********** SETTINGS **********
