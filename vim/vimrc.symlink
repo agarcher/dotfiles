@@ -18,6 +18,8 @@ Plug 'mileszs/ack.vim'                              " file search utility
 Plug 'scrooloose/nerdcommenter'                     " hotkey code commenting
 Plug 'luochen1990/rainbow'                          " parenthesis colour coding
 Plug 'itchyny/lightline.vim'                        " status bar skin
+" Plug 'vim-airline/vim-airline'                      " status bar skin
+Plug 'vim-ruby/vim-ruby'                            " ruby things
 call plug#end()
 
 " ********** SETTINGS **********
