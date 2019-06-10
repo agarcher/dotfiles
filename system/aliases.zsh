@@ -8,3 +8,7 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# edit current command in vim with <esc>v
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
