@@ -96,3 +96,6 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>qq :q<cr>
 nnoremap <leader>qw :wq<cr>
 nnoremap <leader>wq :wq<cr>
+
+" quick close without saving
+nnoremap <leader>q! :q!<cr>
