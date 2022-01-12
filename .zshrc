@@ -6,6 +6,12 @@ export DF_HOME=~/dotfiles
 export DF_CORE=$DF_HOME/core
 export DF_USER=$DF_HOME/personal
 
+# Customization script that runs first and takes precidence
+# Should be easy to merge with future updates
+if [ -e $DF_USER/first.zsh ]; then
+  source $DF_USER/first.zsh
+fi
+
 # Create common color functions.
 autoload -U colors
 colors

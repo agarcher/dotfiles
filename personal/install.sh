@@ -5,3 +5,5 @@ if [ "$ZSH_HOST_OS" = "darwin" ]; then
   echo "installing Homebrew packages"
   brew install neovim
 fi
+
+ln -vsfn ~/dotfiles/personal/p10k.zsh ~/.p10k.zsh
