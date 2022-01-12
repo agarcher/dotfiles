@@ -1,1 +1,17 @@
 # Add your preferred git settings here. This will overwrite anything in `core/configs/.gitconfig`.
+
+# Stuff added by dev
+[core]
+  commitGraph = true
+[credential]
+  helper =
+  helper = store --file /opt/dev/var/private/git_credential_store
+[gc]
+  writeCommitGraph = true
+[protocol]
+  version = 2
+[url "https://github.com/Shopify/"]
+  insteadOf = git@github.com:Shopify/
+  insteadOf = git@github.com:shopify/
+  insteadOf = ssh://git@github.com/Shopify/
+  insteadOf = ssh://git@github.com/shopify/
