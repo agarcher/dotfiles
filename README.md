@@ -1,7 +1,7 @@
 Personal dotfiles, designed for use on MacOS and in Shopify spin environments. Based on https://github.com/Shopify/dotfiles-starter-template by @dersam.
 
 Uses [oh-my-zsh](https://ohmyz.sh/) with [Antigen](https://github.com/zsh-users/antigen) to manage dependencies and themes.
-Default theme is [Staples](https://github.com/dersam/staples).
+Theme is [powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
 ### Prerequisites
 On MacOS, this repo assumes [Homebrew](https://brew.sh) and [coreutils](https://command-not-found.com/dircolors) are installed.
