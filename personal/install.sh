@@ -12,12 +12,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir -p ~/.config/nvim
 ln -vsfn ~/dotfiles/personal/nvim_init.vim ~/.config/nvim/init.vim
 
-# link fzf configuration
-ln -vsfn ~/dotfiles/personal/fzf.zsh ~/.fzf.zsh
-
 if [ "$ZSH_HOST_OS" = "darwin" ]; then
   echo "installing Homebrew packages"
   brew install --quiet neovim fzf
+
+  # link fzf configuration it references homebrew install, so won't work in ubuntu environment
+  ln -vsfn ~/dotfiles/personal/fzf.zsh ~/.fzf.zsh
 fi
 
 if [ $SPIN ]; then
