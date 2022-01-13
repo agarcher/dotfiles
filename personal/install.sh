@@ -14,12 +14,16 @@ ln -vsfn ~/dotfiles/personal/nvim_init.vim ~/.config/nvim/init.vim
 
 if [ "$ZSH_HOST_OS" = "darwin" ]; then
   echo "installing Homebrew packages"
-  brew install --quiet neovim fzf
+  brew install --quiet neovim fzf tmux
 
   # link fzf configuration it references homebrew install, so won't work in ubuntu environment
   ln -vsfn ~/dotfiles/personal/fzf.zsh ~/.fzf.zsh
 fi
 
 if [ $SPIN ]; then
-  sudo apt-get install fzf
+  sudo apt-get install fzf tmux
 fi
+
+# link tmux configuration
+ln -vsfn ~/dotfiles/.tmux/.tmux.conf ~/.tmux.conf
+ln -vsfn ~/dotfiles/personal/tmux.conf.local ~/.tmux.conf.local
