@@ -1,17 +1,24 @@
+" ********** PLUGINS **********
+
+call plug#begin("~/.vim/plugged")
+Plug 'tpope/vim-sensible'             " default settings
+Plug 'vim-airline/vim-airline'        " status bar skin
+Plug 'rakr/vim-one'                   " colorscheme / theme
+
+call plug#end()
+
+" *********** SETTINGS ***********
+
 set nocompatible                    " disable compatibility to old-time vi
 set showmatch                       " show matching
-set ignorecase                      " case insensitive
-set mouse=v                         " middle-click paste with
+set ignorecase                      " case insensitive search
 set hlsearch                        " highlight search
-set incsearch                       " incremental search
 set tabstop=2                       " number of columns occupied by a tab
 set softtabstop=2                   " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab                       " converts tabs to white space
 set shiftwidth=2                    " width for autoindents
-set autoindent                      " indent a new line the same amount as the line just typed
 set number                          " add line numbers
 set wildmode=longest,list           " get bash-like tab completions
-set cc=80                           " set an 80 column border for good coding style
 filetype plugin indent on           " allow auto-indenting depending on file type
 syntax on                           " syntax highlighting
 set mouse=a                         " enable mouse click
@@ -47,3 +54,7 @@ nnoremap <leader>wq :wq<cr>
 
 " quick close without saving
 nnoremap <leader>q! :q!<cr>
+
+" ********** THEME ************
+let g:airline_theme='one'
+colorscheme one

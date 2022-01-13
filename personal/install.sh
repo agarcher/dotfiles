@@ -4,6 +4,10 @@
 # link powerlevel10k
 ln -vsfn ~/dotfiles/personal/p10k.zsh ~/.p10k.zsh
 
+# install vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # link nvim configuration
 mkdir -p ~/.config/nvim
 ln -vsfn ~/dotfiles/personal/nvim_init.vim ~/.config/nvim/init.vim
