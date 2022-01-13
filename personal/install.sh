@@ -19,3 +19,7 @@ if [ "$ZSH_HOST_OS" = "darwin" ]; then
   echo "installing Homebrew packages"
   brew install --quiet neovim fzf
 fi
+
+if [ $SPIN ]; then
+  sudo apt-get install fzf
+fi
