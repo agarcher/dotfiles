@@ -24,6 +24,10 @@ if [ $SPIN ]; then
   sudo apt-get install fzf tmux
 fi
 
+# update submodules (ensure oh-my-tmux is loaded)
+echo "updating submodules"
+git submodule update --init
+
 # link tmux configuration
 ln -vsfn ~/dotfiles/.tmux/.tmux.conf ~/.tmux.conf
 ln -vsfn ~/dotfiles/personal/tmux.conf.local ~/.tmux.conf.local
