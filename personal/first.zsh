@@ -3,7 +3,7 @@
 
 # set this flag to disable auto-attach
 # SKIP_AUTO_ATTACH_TMUX=1
-if [[ -n $SKIP_AUTO_ATTACH_TMUX ]]; then
+if [[ -n $SKIP_AUTO_ATTACH_TMUX || -n $SSH_CONNECTION ]]; then
   # noop
 elif [[ "vscode" = $TERM_PROGRAM ]]; then
   folder_name="$(basename $(pwd))"
