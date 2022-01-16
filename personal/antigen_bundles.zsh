@@ -11,5 +11,5 @@
 # You can read more in https://github.com/zsh-users/antigen/wiki/Commands#antigen-theme for info on how to define
 # custom caching keys for different environments, if you desire that. The cache speeds up your terminal startup, so
 # try to avoid disabling the cache unless you have no other choice.
-antigen bundle jeffreytse/zsh-vi-mode
+# antigen bundle jeffreytse/zsh-vi-mode
 antigen theme romkatv/powerlevel10k
