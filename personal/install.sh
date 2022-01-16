@@ -13,11 +13,17 @@ mkdir -p ~/.config/nvim
 ln -vsfn ~/dotfiles/personal/nvim_init.vim ~/.config/nvim/init.vim
 
 if [ "$ZSH_HOST_OS" = "darwin" ]; then
-  echo "installing Homebrew packages"
+  echo "Installing Homebrew packages"
   brew install --quiet neovim fzf tmux
+
+  echo "Installing Homebrew casks"
+  brew install --quiet karabiner-elements
 
   # link fzf configuration it references homebrew install, so won't work in ubuntu environment
   ln -vsfn ~/dotfiles/personal/fzf.zsh ~/.fzf.zsh
+
+  # link karabiner configuration
+  ln -vsfn ~/dotfiles/personal/karabiner ~/.config/karabiner
 fi
 
 if [ $SPIN ]; then
