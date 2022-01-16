@@ -16,18 +16,31 @@ bindkey -v
 # Aliases
 alias reload="source ~/.zshrc"
 
+# git
 alias g="git"
-alias gl='git pull --prune'
+alias gl="git pull --prune"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gp='git push'
-alias gd='git diff'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gam='git commit --amend'
-alias gamn='git commit --amend --no-edit'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status -sb'
+alias gp="git push"
+alias gd="git diff"
+alias gc="git commit"
+alias gca="git commit -a"
+alias gam="git commit --amend"
+alias gamn="git commit --amend --no-edit"
+alias gco="git checkout"
+alias gb="git branch"
+alias gs="git status -sb"
+
+# ls
+alias l="ls -lhA --color --group-directories-first --time-style=long-iso"
+alias ll="ls -lA --color"
+alias lt="ls -lhAtr --color --group-directories-first --time-style=long-iso"
+
+# cd
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
 
 if [ "$ZSH_HOST_OS" = "darwin" ]; then
   # load fzf keybindings
