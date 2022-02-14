@@ -49,3 +49,6 @@ if [ "$ZSH_HOST_OS" = "darwin" ]; then
   # load fzf keybindings
   [ -e ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
+
+# Stuff for dev
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
