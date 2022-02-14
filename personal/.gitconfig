@@ -3,9 +3,6 @@
 # Stuff added by dev
 [core]
   commitGraph = true
-[credential]
-  helper =
-  helper = store --file /opt/dev/var/private/git_credential_store
 [gc]
   writeCommitGraph = true
 [protocol]
