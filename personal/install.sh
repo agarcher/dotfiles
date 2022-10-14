@@ -14,7 +14,7 @@ ln -vsfn ~/dotfiles/personal/nvim_init.vim ~/.config/nvim/init.vim
 
 if [ "$ZSH_HOST_OS" = "darwin" ]; then
   echo "Installing Homebrew packages"
-  brew install --quiet neovim fzf tmux
+  brew install --quiet neovim fzf tmux thefuck coreutils
 
   echo "Installing Homebrew casks"
   brew install --quiet karabiner-elements
