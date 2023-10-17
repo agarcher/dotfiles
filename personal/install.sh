@@ -18,6 +18,7 @@ if [ "$ZSH_HOST_OS" = "darwin" ]; then
 
   echo "Installing Homebrew casks"
   brew install --quiet karabiner-elements
+  brew install --cask rectangle
 
   # link fzf configuration it references homebrew install, so won't work in ubuntu environment
   ln -vsfn ~/dotfiles/personal/fzf.zsh ~/.fzf.zsh
