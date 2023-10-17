@@ -3,6 +3,7 @@
 	# Include user-specific info like git credentials.
 	path = ~/dotfiles/personal/.gitconfig
 	path = /Users/agarcher/.config/dev/gitconfig
+	path = ~/.gitconfig.local
 
 [alias]
 
