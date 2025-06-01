@@ -42,7 +42,7 @@
 	# http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/
 	eol = native
 	autocrlf = input
-	safecrlf = true
+	safecrlf = false
 	ignorecase = false
 	excludesfile = ~/.gitignore_global
 
