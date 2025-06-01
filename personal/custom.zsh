@@ -46,6 +46,6 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 if [ "$ZSH_HOST_OS" = "darwin" ]; then
-  # load fzf keybindings
+  # load fzf keybindings and completion
   [ -e ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi

@@ -1,13 +1,16 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
+# Get the correct Homebrew prefix for both Intel and Apple Silicon Macs
+FZF_HOMEBREW_PREFIX=$(brew --prefix)/opt/fzf
+
+if [[ ! "$PATH" == *${FZF_HOMEBREW_PREFIX}/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}${FZF_HOMEBREW_PREFIX}/bin"
 fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "${FZF_HOMEBREW_PREFIX}/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+source "${FZF_HOMEBREW_PREFIX}/shell/key-bindings.zsh"
