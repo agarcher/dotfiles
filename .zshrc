@@ -83,9 +83,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/agarcher/Downloads/google-cloud-sdk 2/path.zsh.inc' ]; then . '/Users/agarcher/Downloads/google-cloud-sdk 2/path.zsh.inc'; fi
