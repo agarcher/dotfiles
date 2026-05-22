@@ -348,6 +348,10 @@ tmux_conf_copy_to_os_clipboard=false
 # move status line to top
 #set -g status-position top
 
+# swap windows left/right with Shift + arrow
+bind -r S-Left  swap-window -d -t -1
+bind -r S-Right swap-window -d -t +1
+
 
 # -- tpm -----------------------------------------------------------------------
 
